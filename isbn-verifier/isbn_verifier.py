@@ -31,7 +31,4 @@ def is_valid(isbn: str):
             + 10
         )
 
-    if isbn_sum_values % 11 == 0:
-        return True
-    else:
-        return False
+    return isbn_sum_values % 11 == 0
